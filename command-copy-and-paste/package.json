@@ -1,7 +1,7 @@
 {
   "name": "command-copy-and-paste",
   "displayName": "Command Copy And Paste",
-  "description": "Opens a command prompt window from the folder that the file currently opened is in",
+  "description": "This extension allows you to run a group of commands in the VSCode terminal and allows you to modify each one if needed.",
   "version": "1.0.0",
   "publisher": "brookec",
   "engines": {
@@ -54,6 +54,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brookec123/command-copy-and-paste.git"
+    "url": "https://github.com/brookec123/CommandCopyAndPaste"
   }
 }
