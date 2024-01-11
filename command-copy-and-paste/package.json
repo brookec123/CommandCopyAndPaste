@@ -1,0 +1,59 @@
+{
+  "name": "command-copy-and-paste",
+  "displayName": "Command Copy And Paste",
+  "description": "Opens a command prompt window from the folder that the file currently opened is in",
+  "version": "1.0.0",
+  "publisher": "brookec",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": ["Other"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "command-copy-and-paste.openCmdFolder",
+        "title": "Command Copy And Paste"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "command-copy-and-paste.openCmdFolder",
+        "key": "ctrl+alt+x",
+        "mac": "cmd+alt+x",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "resourceScheme == 'file'",
+          "command": "command-copy-and-paste.openCmdFolder",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "activationEvents": [
+    "onCommand:command-copy-and-paste.openCmdFolder"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.0",
+    "@types/mocha": "^10.0.3",
+    "@types/node": "18.x",
+    "eslint": "^8.52.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "@vscode/test-electron": "^2.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brookec123/command-copy-and-paste.git"
+  }
+}
