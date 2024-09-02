@@ -21,6 +21,10 @@ None on record yet.
 
 Initial release of Command Copy And Paste.
 
+### 1.0.1
+
+Added icon.
+
 ---
 
 **Enjoy!**

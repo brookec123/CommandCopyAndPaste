@@ -4,4 +4,8 @@ All notable changes to the "Command Copy And Paste" extension will be documented
 
 ## [1.0.0]
 
-- Initial release
+- Initial release of Command Copy And Paste.
+
+## [1.0.1]
+
+- Added icon.

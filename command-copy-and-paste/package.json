@@ -2,12 +2,15 @@
   "name": "command-copy-and-paste",
   "displayName": "Command Copy And Paste",
   "description": "This extension allows you to run a group of commands in the VSCode terminal and allows you to modify each one if needed.",
+  "icon": "icon/command-copy-and-paste-icon.png",
   "version": "1.0.0",
   "publisher": "brookec",
   "engines": {
     "vscode": "^1.84.0"
   },
-  "categories": ["Other"],
+  "categories": [
+    "Other"
+  ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
